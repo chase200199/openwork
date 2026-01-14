@@ -19,8 +19,6 @@ win:
   target:
     - target: nsis
       arch: x64
-    - target: dir
-      arch: x64
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
@@ -38,14 +36,12 @@ mac:
   target:
     - target: dmg
     - target: zip
-    - target: dir
 dmg:
   artifactName: ${name}-${version}-${arch}.${ext}
 linux:
   target:
     - target: AppImage
     - target: deb
-    - target: dir
   maintainer: langchain.com
   category: Development
 appImage:

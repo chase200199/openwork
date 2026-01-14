@@ -40,8 +40,7 @@
     "build:mac:arm64": "electron-vite build && electron-builder --mac --arm64",
     "build:linux": "electron-vite build && electron-builder --linux",
     "build:linux:x64": "electron-vite build && electron-builder --linux --x64",
-    "build:linux:arm64": "electron-vite build && electron-builder --linux --arm64",
-    "publish:npm": "node ./scripts/publish-npm.js"
+    "build:linux:arm64": "electron-vite build && electron-builder --linux --arm64"
   },
   "dependencies": {
     "@langchain/anthropic": "^1.3.7",

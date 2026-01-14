@@ -16,20 +16,7 @@ A tactical agent interface for [deepagentsjs](https://github.com/langchain-ai/de
 
 ## Installation
 
-### Using npm (recommended)
-
-```bash
-# Install globally
-npm install -g openwork
-openwork
-
-# Or run directly with npx
-npx openwork
-```
-
-The npm package automatically installs the correct binary for your platform.
-
-### Using Homebrew (macOS)
+### Homebrew (macOS)
 
 ```bash
 brew tap langchain-ai/tap
@@ -136,22 +123,13 @@ pnpm run build:linux      # Linux (current arch)
 pnpm run build:win        # Windows
 ```
 
-## Distribution
-
-The npm package is published from `distributions/npm/`. Platform-specific binaries are published as separate packages:
-
-| Platform | npm Package |
-|----------|-------------|
-| macOS (Apple Silicon) | `@langchain/openwork-darwin-arm64` |
-| macOS (Intel) | `@langchain/openwork-darwin-x64` |
-| Linux (x64) | `@langchain/openwork-linux-x64` |
-| Linux (ARM64) | `@langchain/openwork-linux-arm64` |
-| Windows (x64) | `@langchain/openwork-win32-x64` |
+## Releases
 
 To publish a new release:
+
 1. Create a git tag: `git tag v0.2.0`
 2. Push the tag: `git push origin v0.2.0`
-3. GitHub Actions will build all platforms and publish to npm
+3. GitHub Actions will build all platforms and create a GitHub release
 
 ## Design System
 
